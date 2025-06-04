@@ -13,3 +13,5 @@ def contact(request):
 
 def classifications(request):
     return render(request,'pages/classifications.html')
+
+

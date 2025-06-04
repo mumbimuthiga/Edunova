@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | EduNova</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    {% include 'pages/base.html' %}
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="mb-4 text-center">About EduNova</h1>
+                <p class="lead text-center">
+                    EduNova is your trusted platform for exploring skills, occupations, and learning opportunities. Our mission is to empower individuals with the knowledge and tools they need to succeed in their education and career journeys.
+                </p>
+                <hr>
+                <h3>Our Vision</h3>
+                <p>
+                    To bridge the gap between education and the world of work by providing accessible, up-to-date information on skills, competences, and career paths.
+                </p>
+                <h3>What We Offer</h3>
+                <ul>
+                    <li>Comprehensive skill and occupation classification</li>
+                    <li>Easy-to-use search and browse features</li>
+                    <li>Guidance for learners, job seekers, and educators</li>
+                    <li>Resources for personal and professional development</li>
+                </ul>
+                <h3>Contact Us</h3>
+                <p>
+                    Have questions or feedback? Reach out to us at <a href="mailto:info@edunova.com">info@edunova.com</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    {% include 'pages/footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
