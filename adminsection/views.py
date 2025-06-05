@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from .models import Program
+
+from programs.models import Programs
+
+
 
 # Create your views here.
 
@@ -9,8 +12,11 @@ def dashboard(request):
 def profile(request):
     return render(request,'admin/profile.html')
 
-def programs(request):
-    programs=Program.objects.all()
+def programs_view(request):
+    programs=Programs.objects.all()
+    print (programs)
+    for program in programs:
+        print(program) 
     return render(request,'admin/programs.html',{'programs':programs})
 
 def jobs(request):

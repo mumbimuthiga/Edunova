@@ -16,9 +16,9 @@
       {% csrf_token %}
 
       <div class="mb-3">
-        <label for="id_username" class="form-label">Username</label>
-        <input type="text" name="username" id="id_username" class="form-control" required>
-        {% if form.username.errors %}
+        <label for="id_firstname" class="form-label">Firstname</label>
+        <input type="text" name="firstname" id="id_firstname" class="form-control" required>
+        {% if form.firstname.errors %}
           <div class="text-danger small">{{ form.username.errors.0 }}</div>
         {% endif %}
       </div>
