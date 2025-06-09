@@ -84,7 +84,7 @@ DATABASES = {
         'USER':'mumbi_admin@career-edunova-db',
         'PASSWORD':'EduNova@123!',
         'HOST':'localhost',
-        'PORT':'5433',
+        'PORT':'5432',
          'OPTIONS': {
             'sslmode': 'require',
         },
