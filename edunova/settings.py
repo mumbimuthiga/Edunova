@@ -81,10 +81,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'edunova',
-        'USER':'mumbi_admin',
+        'USER':'mumbi_admin@career-edunova-db',
         'PASSWORD':'EduNova@123!',
         'HOST':'localhost',
         'PORT':'5433',
+         'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 
