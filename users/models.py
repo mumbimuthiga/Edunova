@@ -35,16 +35,21 @@ class UserManager(BaseUserManager):
 
 # Custom user model
 class Users(AbstractBaseUser, PermissionsMixin):
+    ROLE_CHOICES = (
+        (0, 'Student'),
+        (1, 'Faculty'),
+    )
     first_name = models.CharField(max_length=50, blank=True)
     last_name = models.CharField(max_length=50, blank=True)
     surname = models.CharField(max_length=50, blank=True)
     email = models.EmailField(unique=True)
-    role = models.IntegerField(default=0)  # 0 for user, 1 for admin
+    role = models.IntegerField(choices=ROLE_CHOICES,default=0)  # 0 for user, 1 for admin
     date_created = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
     objects = UserManager()
+    
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name','surname']
