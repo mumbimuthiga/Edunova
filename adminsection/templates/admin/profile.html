@@ -4,7 +4,8 @@
 <div class="container mt-4">
     <div class="card">
         <div class="card-body">
-            <p><strong>Name:</strong> {{ user.get_full_name|default:user.first_name }}</p>
+
+            <p><strong>Name:</strong> {{ user.first_name|default:'' }} {{ user.last_name|default:'' }} {{ user.surname|default:'' }}</p>
             <p><strong>Email:</strong> {{ user.email }}</p>
             <p><strong>Program:</strong> {{ profile.program }}</p>
             <p><strong>University:</strong> {{ profile.university }}</p>
