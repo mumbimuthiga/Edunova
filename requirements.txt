@@ -1,0 +1,10 @@
+Django>=5.2,<6.0
+psycopg2-binary
+gunicorn
+whitenoise
+django-environ
+python-dotenv
+# Optional: For Azure deployment and static/media storage
+azure-storage-blob
+
+Pillow
