@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ctvv&%%95vs_mmd+fsn3z&-kb6ccj_u_*2_i+$g#-a$0(vhjwh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['careeredunova.azurewebsites.net']
+ALLOWED_HOSTS = ['careeredunova.azurewebsites.net','careeredunova-czbufrgca5g0c8eu.canadacentral-01.azurewebsites.net']
 
 
 # Application definition
@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'edunova',
-        'USER':'mumbi',
-        'PASSWORD':'mumbi@123',
+        'USER':'mumbi_admin',
+        'PASSWORD':'EduNova@123!',
         'HOST':'localhost',
         'PORT':'5433',
     }
