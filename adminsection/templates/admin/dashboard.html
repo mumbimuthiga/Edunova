@@ -1,5 +1,129 @@
 {% extends 'admin/adminsection_base.html' %}
 {% block content %}
   <h1>Admin Dashboard</h1>
-  <p>Welcome to the admin dashboard!</p>
+  <p>Welcome to EduNova dashboard!</p>
+
+  <div class="container my-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card text-center shadow-sm" style="color:#da156b">
+          <div class="card-body">
+             <i class="bi bi-journal-bookmark"></i> 
+            <h5 class="card-title">Courses</h5>
+            <p class="display-4">{{ num_courses }}</p>
+            <blockquote>Available learning paths</blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-center shadow-sm" style="color:#0d6efd">
+          <div class="card-body">
+             <i class="bi bi-briefcase"></i> 
+            <h5 class="card-title" style="color:#0d6efd">Careers</h5>
+            <p class="display-4" style="color:#0d6efd">{{ num_careers }}</p>
+            <blockquote>Future opportunities</blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-center shadow-sm" style="color:green">
+          <div class="card-body">
+             <i class="bi bi-stars"></i> 
+            <h5 class="card-title" >Skills</h5>
+            <p class="display-4">{{ num_skills }}</p>
+             <blockquote>In-demand abilities</blockquote>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container my-4">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card shadow-sm mb-4 h-100">
+        <div class="card-body">
+          <h5 class="card-title mb-3"><span class="text-primary">Bachelor of Science (Computer Science)</span></h5>
+          <h6 class="mb-2">Key Skills:</h6>
+          <div class="mb-3">
+            <span class="badge bg-primary me-2 mb-2"><i class="bi bi-code-slash"></i> Programming</span>
+            <span class="badge bg-success me-2 mb-2"><i class="bi bi-bar-chart"></i> Data Analysis</span>
+            <span class="badge bg-warning text-dark me-2 mb-2"><i class="bi bi-lightbulb"></i> Problem Solving</span>
+          </div>
+          <h6 class="mb-2">Related Jobs:</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-laptop me-2 text-primary"></i> Software Developer
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-graph-up-arrow me-2 text-success"></i> Data Scientist
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-diagram-3 me-2 text-warning"></i> Systems Analyst
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card shadow-sm mb-4 h-100">
+        <div class="card-body">
+          <h5 class="card-title mb-3"><span class="text-primary">Bachelor of Business Management</span></h5>
+          <h6 class="mb-2">Key Skills:</h6>
+          <div class="mb-3">
+            <span class="badge bg-primary me-2 mb-2"><i class="bi bi-people"></i> Leadership</span>
+            <span class="badge bg-success me-2 mb-2"><i class="bi bi-bar-chart-line"></i> Strategic Planning</span>
+            <span class="badge bg-warning text-dark me-2 mb-2"><i class="bi bi-cash-stack"></i> Financial Analysis</span>
+          </div>
+          <h6 class="mb-2">Related Jobs:</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-briefcase me-2 text-primary"></i> Business Analyst
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-people-fill me-2 text-success"></i> HR Manager
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-graph-up me-2 text-warning"></i> Project Manager
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card shadow-sm mb-4 h-100">
+        <div class="card-body">
+          <h5 class="card-title mb-3"><span class="text-primary">Diploma in Graphic Design</span></h5>
+          <h6 class="mb-2">Key Skills:</h6>
+          <div class="mb-3">
+            <span class="badge bg-primary me-2 mb-2"><i class="bi bi-palette"></i> Creativity</span>
+            <span class="badge bg-success me-2 mb-2"><i class="bi bi-vector-pen"></i> Illustration</span>
+            <span class="badge bg-warning text-dark me-2 mb-2"><i class="bi bi-layers"></i> Layout Design</span>
+          </div>
+          <h6 class="mb-2">Related Jobs:</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-easel me-2 text-primary"></i> Graphic Designer
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-camera me-2 text-success"></i> Creative Director
+            </li>
+            <li class="list-group-item d-flex align-items-center" style="background: #f8f9fa;">
+              <i class="bi bi-film me-2 text-warning"></i> Multimedia Artist
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

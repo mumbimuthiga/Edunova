@@ -9,7 +9,16 @@ import xml.etree.ElementTree as ET
 # Create your views here.
 
 def dashboard(request):
-    return render(request, 'admin/dashboard.html')
+    num_courses=Programs.objects.count()
+    # num_careers=Careers.objects.count()
+    # num_skills=Skills.objects.count()
+    num_careers=3
+    num_skills=10
+    return render(request, 'admin/dashboard.html',{
+        'num_courses':num_courses,
+        'num_careers':num_careers,
+        'num_skills':num_skills
+    })
 
 def profile(request):
     return render(request,'admin/profile.html')
