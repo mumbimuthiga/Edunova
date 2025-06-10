@@ -80,13 +80,7 @@ edunova/
 └── requirements.txt
 ```
 
-## Customization
 
-- **Email sending:** By default, emails are printed to the console. Configure SMTP in `settings.py` for production.
-- **Dashboard stats:** Pass `num_courses`, `num_careers`, and `num_skills` from your views to the dashboard template.
-- **Course cards:** Update course, skills, and jobs data in the dashboard as needed.
-
-## License
 
 This project is licensed under the MIT License.
 
