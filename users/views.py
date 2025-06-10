@@ -19,16 +19,17 @@ def signup_view(request):
         form=CustomUserCreationForm(request.POST)
         if(form.is_valid()):
             user=form.save(commit=False)
-            password= generate_password()
+           # password= generate_password()
+            password='Zustaff@123'
             user.set_password(password)
             user.save()
-            send_mail(
-                'Your EduNova Account Password',
-                f'Hello {user.first_name},\n\nYour account has been created. Your password is: {password}\n\nPlease log in and change your password.',
-                settings.DEFAULT_FROM_EMAIL,
-                [user.email],
-                fail_silently=False,
-            )
+            # send_mail(
+            #     'Your EduNova Account Password',
+            #     f'Hello {user.first_name},\n\nYour account has been created. Your password is: {password}\n\nPlease log in and change your password.',
+            #     settings.DEFAULT_FROM_EMAIL,
+            #     [user.email],
+            #     fail_silently=False,
+            # )
             # login(request,user)
 
             print(f"Registered email: {user.email} | Password: {password}")
