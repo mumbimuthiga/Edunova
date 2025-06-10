@@ -53,7 +53,33 @@ def jobs(request):
 
 def skills(request):
     #skills=Skills.objects.all()
-    skills = []
+    skills = [
+        "Python",
+        "Java",
+        "JavaScript",
+        "SQL",
+        "HTML/CSS",
+        "C#",
+        "C++",
+        "Django",
+        "React",
+        "Node.js",
+        "Git",
+        "REST APIs",
+        "Docker",
+        "Kubernetes",
+        "Linux/Unix",
+        "AWS",
+        "Azure",
+        "Machine Learning",
+        "Data Analysis",
+        "Cloud Computing",
+        "DevOps",
+        "NoSQL Databases",
+        "CI/CD",
+        "Agile Methodologies",
+        "Cybersecurity"
+    ]
     # print (programs)
     # for program in programs:
     #     print(program) 
