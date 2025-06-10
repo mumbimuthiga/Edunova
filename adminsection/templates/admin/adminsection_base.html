@@ -27,9 +27,7 @@
       <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}" href="{% url 'dashboard' %}">
         <i class="bi bi-house-door"></i> Dashboard
       </a>
-      <a class="nav-link {% if request.resolver_match.url_name == 'profile' %}active{% endif %}" href="{% url 'profile' %}">
-        <i class="bi bi-person-circle"></i> Profile
-      </a>
+     
       <a class="nav-link {% if request.resolver_match.url_name == 'programs' %}active{% endif %}" href="{% url 'programs' %}">
         <i class="bi bi-journal-bookmark"></i> Programs
       </a>
@@ -38,6 +36,9 @@
       </a>
       <a class="nav-link {% if request.resolver_match.url_name == 'skills' %}active{% endif %}" href="{% url 'skills' %}">
         <i class="bi bi-stars"></i> Skills
+      </a>
+       <a class="nav-link {% if request.resolver_match.url_name == 'profile' %}active{% endif %}" href="{% url 'profile' %}">
+        <i class="bi bi-person-circle"></i> Profile
       </a>
       
       <a class="nav-link mt-auto" href="{% url 'logout' %}">
