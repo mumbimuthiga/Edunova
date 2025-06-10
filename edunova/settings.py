@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'edunova.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'edunova',
+        'NAME':'postgres',
         'USER':'mumbi_admin@career-edunova-db',
         'PASSWORD':'EduNova@123!',
         'HOST':'career-edunova-db.postgres.database.azure.com',
