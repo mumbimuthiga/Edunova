@@ -27,6 +27,9 @@ SECRET_KEY = 'django-insecure-ctvv&%%95vs_mmd+fsn3z&-kb6ccj_u_*2_i+$g#-a$0(vhjwh
 DEBUG = True
 
 ALLOWED_HOSTS = ['careeredunova.azurewebsites.net','careeredunova-czbufrgca5g0c8eu.canadacentral-01.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = [
+    'https://careeredunova-czbufrgca5g0c8eu.canadacentral-01.azurewebsites.net',
+]
 
 
 # Application definition
