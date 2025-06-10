@@ -86,7 +86,7 @@ DATABASES = {
         'NAME':'edunova',
         'USER':'mumbi_admin@career-edunova-db',
         'PASSWORD':'EduNova@123!',
-        'HOST':'localhost',
+        'HOST':'career-edunova-db.postgres.database.azure.com',
         'PORT':'5432',
          'OPTIONS': {
             'sslmode': 'require',
