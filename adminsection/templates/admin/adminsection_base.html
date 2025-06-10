@@ -24,9 +24,9 @@
       <div class="sidebar-header">
         <i class="bi bi-mortarboard"></i> EduNova
       </div>
-      <!-- <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">
-        <i class="bi bi-house-door"></i> Home
-      </a> -->
+      <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}" href="{% url 'dashboard' %}">
+        <i class="bi bi-house-door"></i> Dashboard
+      </a>
       <a class="nav-link {% if request.resolver_match.url_name == 'profile' %}active{% endif %}" href="{% url 'profile' %}">
         <i class="bi bi-person-circle"></i> Profile
       </a>
